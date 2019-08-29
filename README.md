@@ -3,7 +3,11 @@ For building TWRP for Xiaomi Redmi Note 5 Pro ONLY
 
 To compile
 
+<<<<<<< HEAD
 . build/envsetup.sh && lunch omni_whyred-eng && make -j8 recoveryimage
+=======
+Build OrangeFox with `export "FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1"` to get working decryption
+>>>>>>> a96f39a... Modem+bluetooth moved to firmware image
 
 The Redmi Note 5 Pro (codenamed _"whyred"_) are high-end mid-range smartphones from Xiaomi.
 
