@@ -1,21 +1,17 @@
-# android_device_xiaomi_whyred
-For building TWRP for Xiaomi Redmi Note 5 Pro ONLY
+# android_device_asus_X01BD
+For building TWRP for asus Redmi Note 5 Pro ONLY
 
 To compile
 
-<<<<<<< HEAD
-. build/envsetup.sh && lunch omni_whyred-eng && make -j8 recoveryimage
-=======
-Build OrangeFox with `export "FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1"` to get working decryption
->>>>>>> a96f39a... Modem+bluetooth moved to firmware image
+. build/envsetup.sh && lunch omni_X01BD-eng && make -j8 recoveryimage
 
-The Redmi Note 5 Pro (codenamed _"whyred"_) are high-end mid-range smartphones from Xiaomi.
+The Redmi Note 5 Pro (codenamed _"X01BD"_) are high-end mid-range smartphones from asus.
 
-Xiaomi Redmi Note 5 Pro was announced and released in February 2018.
+asus Redmi Note 5 Pro was announced and released in February 2018.
 
 ## Device specifications
 
-| Device       | Xiaomi Redmi Note 5 Pro                         |
+| Device       | asus Redmi Note 5 Pro                         |
 | -----------: | :---------------------------------------------- |
 | SoC          | Qualcomm SDM660 Snapdragon 636                  |
 | CPU          | 8x Qualcomm® Kryo™ 260 up to 1.8GHz             |
@@ -32,4 +28,4 @@ Xiaomi Redmi Note 5 Pro was announced and released in February 2018.
 
 ## Device picture
 
-![Xiaomi Redmi Note 5 Pro](https://www1-lw.xda-cdn.com/files/2018/02/Xiaomi-Redmi-Note-5-and-Redmi-Note-5-Pro-Forums-now-Open.png)
+![asus Redmi Note 5 Pro](https://www1-lw.xda-cdn.com/files/2018/02/asus-Redmi-Note-5-and-Redmi-Note-5-Pro-Forums-now-Open.png)
