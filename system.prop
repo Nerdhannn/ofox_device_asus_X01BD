@@ -1,8 +1,4 @@
-ro.secure=1
 ro.adb.secure=0
-ro.allow.mock.location=0
-ro.hardware.gatekeeper=sdm660
-ro.hardware.keystore=sdm660
 sys.usb.controller=a800000.dwc3
 sys.usb.rndis.func.name=rndis_bam
 sys.usb.rmnet.func.name=rmnet_bam
