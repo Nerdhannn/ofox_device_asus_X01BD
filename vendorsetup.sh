@@ -15,8 +15,22 @@
 # Please maintain this if you use this script or any part of it
 #
 FDEVICE="X01BD"
-if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
+fox_get_target_device() {
+local chkdev=$(echo "$BASH_SOURCE" | grep $FDEVICE)
+   if [ -n "$chkdev" ]; then
+      FOX_BUILD_DEVICE="$FDEVICE"
+   else
+      chkdev=$(set | grep BASH_ARGV | grep $FDEVICE)
+      [ -n "$chkdev" ] && FOX_BUILD_DEVICE="$FDEVICE"
+   fi
+}
+
+if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
+   fox_get_target_device
+fi
+
+if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 export OF_USE_LEGACY_CRYPTO=1
 export PLATFORM_VERSION="16.1.0"
 export PLATFORM_SECURITY_PATCH="2099-12-31"
@@ -41,8 +55,8 @@ export OF_MAINTAINER="NerdZ3ns"
 export FOX_BUILD_TYPE=Beta
 export OF_DISABLE_DM_VERITY=1
 export OF_DISABLE_FORCED_ENCRYPTION=1
-export TW_DEVICE_VERSION="R11.1_3"
-export FOX_VERSION="R11.1_3"
+export TW_DEVICE_VERSION="R11.1_1"
+export FOX_VERSION="R11.1_1"
 export FOX_R11=1
 export OF_SUPPORT_PRE_FLASH_SCRIPT=1
 export LC_ALL=C
