@@ -6,3 +6,7 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES_ENG += \
     qcom_decrypt \
     qcom_decrypt_fbe
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
