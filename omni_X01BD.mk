@@ -36,7 +36,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.secure=1 \
     ro.adb.secure=0 \
     ro.allow.mock.location=0 \
-    ro.hardware.keystore=sdm660
+    ro.hardware.keystore=sdm660 \
+    ro.hardware.gatekeeper=sdm660
     
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X01BD_1 \
