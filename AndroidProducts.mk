@@ -15,4 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_X01BD.mk
+    $(LOCAL_DIR)/twrp_X01BD.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_X01BD-eng

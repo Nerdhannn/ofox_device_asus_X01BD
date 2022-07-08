@@ -22,7 +22,9 @@ export PLATFORM_VERSION="16.1.0"
 export PLATFORM_SECURITY_PATCH="2099-12-31"
 export TW_DEFAULT_LANGUAGE="en"
 export OF_OTA_RES_DECRYPT=1
-#export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+export OF_NO_SAMSUNG_SPECIAL=1
+export FOX_ENABLE_APP_MANAGER=1
+export FOX_VARIANT="4.19"
 export FOX_USE_BASH_SHELL=1
 export FOX_ASH_IS_BASH=1
 export FOX_USE_NANO_EDITOR=1
@@ -47,7 +49,7 @@ export LC_ALL=C
 
 export FOX_USE_NANO_EDITOR=1
 export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
-export OF_USE_MAGISKBOOT=1
+export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export FOX_ADVANCED_SECURITY=1
 export OF_QUICK_BACKUP_LIST="/boot;/data;/system;/system_root;/vendor;"
 export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
@@ -67,8 +69,5 @@ export OF_RUN_POST_FORMAT_PROCESS=1
   	   export | grep "TW_" >> $FOX_BUILD_LOG_FILE
    	   export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
  	fi
-  	
-	add_lunch_combo omni_"$FDEVICE"-eng
-	add_lunch_combo omni_"$FDEVICE"-userdebug
 fi
 #
